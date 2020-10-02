@@ -8,7 +8,6 @@ void ng::AppInit::initGLFW(int major, int minor)
     if (glfwInit() != GL_TRUE)
     {
         throw std::runtime_error("GLFW can not init");
-        return;
     }
 
     initedGLFW = true;
@@ -25,7 +24,6 @@ void ng::AppInit::initGLEW()
     if (glewInit() != GLEW_OK)
     {
         throw std::runtime_error("GLEW can not init");
-        return;
     }
 
     initedGLEW = true;
