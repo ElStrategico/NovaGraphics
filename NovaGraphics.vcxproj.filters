@@ -10,6 +10,9 @@
     <Filter Include="Source\Window">
       <UniqueIdentifier>{dcdfb455-70cd-470e-8bb0-4c7e68df711f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\EventSystem">
+      <UniqueIdentifier>{5af696d6-3885-4e55-b25d-05f08bdfd290}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\AppInit.cpp">
@@ -24,6 +27,15 @@
     <ClCompile Include="src\Window\Window.cpp">
       <Filter>Source\Window</Filter>
     </ClCompile>
+    <ClCompile Include="src\EventSystem\EventController.cpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventSystem\PollEvent.cpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventSystem\Event.cpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Core\AppInit.hpp">
@@ -37,6 +49,15 @@
     </ClInclude>
     <ClInclude Include="src\Window\Window.hpp">
       <Filter>Source\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\EventController.hpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\PollEvent.hpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventSystem\Event.hpp">
+      <Filter>Source\EventSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

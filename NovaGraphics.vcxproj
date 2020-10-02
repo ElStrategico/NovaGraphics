@@ -20,6 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\AppInit.cpp" />
+    <ClCompile Include="src\EventSystem\Event.cpp" />
+    <ClCompile Include="src\EventSystem\EventController.cpp" />
+    <ClCompile Include="src\EventSystem\PollEvent.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
     <ClCompile Include="src\Window\WindowMode.cpp" />
@@ -27,6 +30,9 @@
   <ItemGroup>
     <ClInclude Include="src\Core\AppInit.hpp" />
     <ClInclude Include="src\Core\GL.hpp" />
+    <ClInclude Include="src\EventSystem\Event.hpp" />
+    <ClInclude Include="src\EventSystem\EventController.hpp" />
+    <ClInclude Include="src\EventSystem\PollEvent.hpp" />
     <ClInclude Include="src\Window\Window.hpp" />
     <ClInclude Include="src\Window\WindowMode.hpp" />
   </ItemGroup>
