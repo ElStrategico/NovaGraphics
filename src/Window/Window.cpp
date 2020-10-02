@@ -9,23 +9,37 @@ windowMode(windowMode), title(title)
 		windowMode.getWidth(), 
 		windowMode.getHeight(), 
 		title.c_str(), 
-		nullptr, 
+		nullptr,
 		nullptr
 	);
+
+	if (window == nullptr)
+	{
+		throw std::runtime_error("Window can not create");
+	}
+
 	glfwMakeContextCurrent(window);
+	glfwSetKeyCallback(window, EventController::keyController);
 
 	if (!AppInit::initedGLEW) AppInit::initGLEW();
-}
 
-ng::Window::Window(uint32_t widht, uint32_t height, const std::string title)
-{
-	WindowMode windowMode(widht, height);
-	Window(windowMode, title);
+	glViewport(0, 0, windowMode.getWidth(), windowMode.getHeight());
 }
 
 bool ng::Window::isOpen()
 {
 	return !glfwWindowShouldClose(window);
+}
+
+bool ng::Window::pollEvent(Event& event)
+{
+	glfwPollEvents();
+
+	if (!PollEvent::exists(window)) return false;
+
+	event = PollEvent::pop(window);
+
+	return true;
 }
 
 void ng::Window::display()

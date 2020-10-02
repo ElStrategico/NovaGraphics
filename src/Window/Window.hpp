@@ -1,10 +1,14 @@
 #pragma once
 
 #include <string>
+#include <stdexcept>
 
 #include <Core/GL.hpp>
 #include <Core/AppInit.hpp>
 #include <Window/WindowMode.hpp>
+
+#include <EventSystem/Event.hpp>
+#include <EventSystem/EventController.hpp>
 
 namespace ng
 {
@@ -17,9 +21,10 @@ namespace ng
 		GLFWwindow* window;
 	public:
 		Window(WindowMode& windowMode, const std::string& title);
-		Window(uint32_t widht, uint32_t height, const std::string title);
 
 		bool isOpen();
+
+		bool pollEvent(Event& event);
 
 		void display();
 	};
