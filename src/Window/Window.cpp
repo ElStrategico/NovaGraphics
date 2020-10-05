@@ -42,7 +42,17 @@ bool ng::Window::pollEvent(Event& event)
 	return true;
 }
 
+void ng::Window::draw(IDrawable* drawable)
+{
+	drawQueue.push_back(drawable);
+}
+
 void ng::Window::display()
 {
+	for (auto drawable : drawQueue)
+	{
+		drawable->draw();
+	}
+
 	glfwSwapBuffers(window);
 }
