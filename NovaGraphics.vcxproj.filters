@@ -13,6 +13,18 @@
     <Filter Include="Source\EventSystem">
       <UniqueIdentifier>{5af696d6-3885-4e55-b25d-05f08bdfd290}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Shape">
+      <UniqueIdentifier>{c69190fb-7eec-466b-8303-001367a2a075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Structure">
+      <UniqueIdentifier>{3972cd8b-f538-44d5-b7c2-9f2512161607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shader">
+      <UniqueIdentifier>{cdeb412b-dfa3-46bc-93fc-1b1e611ed3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ShaderSource">
+      <UniqueIdentifier>{e140f05a-b64c-43db-b6db-97a5e670a4be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\AppInit.cpp">
@@ -36,6 +48,27 @@
     <ClCompile Include="src\EventSystem\Event.cpp">
       <Filter>Source\EventSystem</Filter>
     </ClCompile>
+    <ClCompile Include="src\Shape\Shape.cpp">
+      <Filter>Source\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shape\Triangle.cpp">
+      <Filter>Source\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Structure\VAO.cpp">
+      <Filter>Source\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Structure\VBO.cpp">
+      <Filter>Source\Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\Shader.cpp">
+      <Filter>Source\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\ShaderProgram.cpp">
+      <Filter>Source\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderSource\TriangleShader.cpp">
+      <Filter>Source\ShaderSource</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Core\AppInit.hpp">
@@ -58,6 +91,30 @@
     </ClInclude>
     <ClInclude Include="src\EventSystem\Event.hpp">
       <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shape\Shape.hpp">
+      <Filter>Source\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shape\Triangle.hpp">
+      <Filter>Source\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Structure\VAO.hpp">
+      <Filter>Source\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Structure\VBO.hpp">
+      <Filter>Source\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader\Shader.hpp">
+      <Filter>Source\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader\ShaderProgram.hpp">
+      <Filter>Source\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderSource\TriangleShader.hpp">
+      <Filter>Source\ShaderSource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\IDrawable.hpp">
+      <Filter>Source\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

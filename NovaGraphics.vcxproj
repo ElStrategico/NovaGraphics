@@ -24,15 +24,30 @@
     <ClCompile Include="src\EventSystem\EventController.cpp" />
     <ClCompile Include="src\EventSystem\PollEvent.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ShaderSource\TriangleShader.cpp" />
+    <ClCompile Include="src\Shader\Shader.cpp" />
+    <ClCompile Include="src\Shader\ShaderProgram.cpp" />
+    <ClCompile Include="src\Shape\Shape.cpp" />
+    <ClCompile Include="src\Shape\Triangle.cpp" />
+    <ClCompile Include="src\Structure\VAO.cpp" />
+    <ClCompile Include="src\Structure\VBO.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
     <ClCompile Include="src\Window\WindowMode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Core\AppInit.hpp" />
     <ClInclude Include="src\Core\GL.hpp" />
+    <ClInclude Include="src\Core\IDrawable.hpp" />
     <ClInclude Include="src\EventSystem\Event.hpp" />
     <ClInclude Include="src\EventSystem\EventController.hpp" />
     <ClInclude Include="src\EventSystem\PollEvent.hpp" />
+    <ClInclude Include="src\ShaderSource\TriangleShader.hpp" />
+    <ClInclude Include="src\Shader\Shader.hpp" />
+    <ClInclude Include="src\Shader\ShaderProgram.hpp" />
+    <ClInclude Include="src\Shape\Shape.hpp" />
+    <ClInclude Include="src\Shape\Triangle.hpp" />
+    <ClInclude Include="src\Structure\VAO.hpp" />
+    <ClInclude Include="src\Structure\VBO.hpp" />
     <ClInclude Include="src\Window\Window.hpp" />
     <ClInclude Include="src\Window\WindowMode.hpp" />
   </ItemGroup>
